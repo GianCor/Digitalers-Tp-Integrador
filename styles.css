@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+@import
+	url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Motiva Sans", Sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: fit-content;
+	width: 100vw;
+	justify-content: space-between;
+	font-family: 'Roboto', sans-serif;
+}
+/*HEADER*/
+header {
+	background-color: #171a21;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	/*height: 9%;
+	position: fixed;
+	left: 100;
+	bottom: 100;*/
+}
+
+.contenedor {
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contenedor img {
+	margin-top: 7px;
+	width: 60px;
+	height: auto;
+	margin-bottom: 7px;
+}
+
+.contenedor a {
+	color: #b8b6b4;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+.enlaces-contenedor {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.enlaces-contenedor a {
+	margin-left: 10px;
+	text-transform: uppercase;
+	color: #b8b6b4;
+	justify-content: space-between;
+}
+
+/*MAIN*/
+main {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+}
+
+main .background-seccionUno {
+	background-image: url(assets/main-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	/*background-color: black;*/
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+}
+
+h1 {
+	color: white;
+	font-size: 40px;
+	line-height: 32px;
+	text-overflow: ellipsis;
+	font-weight: 400;
+	padding: 20px 0px;
+}
+
+/*InicioSesion*/
+.formulario-inicio-sesion {
+	color: white;
+	max-width: 300px;
+	padding: 8px 6px;
+	width: 100%;
+	transition: border ease-in-out .5s;
+	outline: none;
+	font-family: "Motiva Sans", Sans-serif;
+	display: inline-block;
+	cursor: text;
+	padding: 1px 2px;
+}
+
+.formulario-inicio-sesion p {
+	padding: 5px;
+}
+
+.formulario-inicio-sesion button:hover {
+	background: linear-gradient(to right, #47BFFF, 5%, #3691E8 60%);
+}
+
+.formulario-inicio-sesion button {
+	border-radius: 2px;
+	display: block;
+	background: #75b022;
+	background: linear-gradient(to bottom, #75b022 5%, #588a1b 95%);
+	background: linear-gradient(to right, #47bfff 5%, #1a44c2 60%);
+	box-shadow: 2px 2px 5px rgb(0 0 0/ 20%);
+	background-position: 25%;
+	background-size: 330% 100%;
+	cursor: pointer;
+	color: #c3e1f8;
+	text-shadow: 1px 1px 0px rgb(0 0 0/ 30%);
+	font-size: 15px;
+	line-height: 30px;
+	padding: 3px 80px;
+	margin: 20px;
+}
+
+.formulario-inicio-sesion p input {
+	max-width: 300px;
+	background: #32353C;
+	border-radius: 3px;
+	color: #E9E9E9;
+	padding: 8px 6px;
+	display: block;
+	box-shadow: none;
+	width: 100%;
+	transition: border ease-in-out .5s;
+	border: 1px solid #26282D;
+	outline: none;
+	font-family: "Motiva Sans", Sans-serif;
+	font-weight: normal;
+}
+
+#registro-contraseña-olvidada {
+	text-align: center;
+	font-size: large;
+}
+
+#registro-contraseña-olvidada a {
+	text-decoration: none;
+}
+
+#contraseña-olvidada {
+	color: #fa6e6e;
+}
+
+#contraseña-olvidada:hover {
+	color: #fc3a3a;
+}
+
+#registrate {
+	font-size: x-large;
+	color: #3af21d;
+	/*border:2px solid green;
+	background: linear-gradient(to right, #7cdb6e 5%, #5fb352 95%);
+   
+	padding: 5px;*/
+}
+
+#registrate:hover {
+	color: #67f551
+}
+
+#crear-cuenta {
+	border-radius: 2px;
+	display: block;
+	background: #75b022;
+	background: linear-gradient(to bottom, #75b022 5%, #588a1b 95%);
+	box-shadow: 2px 2px 5px rgb(0 0 0/ 20%);
+	background-position: 25%;
+	background-size: 330% 100%;
+	cursor: pointer;
+	color: #c3e1f8;
+	text-shadow: 1px 1px 0px rgb(0 0 0/ 30%);
+	font-size: 18px;
+	line-height: 30px;
+	padding: 3px 80px;
+	margin: 20px;
+}
+
+#crear-cuenta:hover {
+	background: linear-gradient(to right, #43ab30 5%, #35a122 95%);
+}
+
+#errores {
+	margin: auto;
+	color: red;
+}
+
+/*FOOTER*/
+footer {
+	background-color: #171a21;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	/*width: 100%;
+	height: 9%;
+	position: fixed;
+	left: 0;
+	bottom: 0;*/
+}
+
+footer .enlaces-footer a {
+	color: #b8b6b4;
+	font-size: 30px;
+	margin-right: 20px;
+}
+
+footer .contenedor p {
+	color: #b8b6b4;
+}
