@@ -73,7 +73,7 @@ main {
 	width: 100%;
 }
 
-main .background-seccionUno {
+main .background {
 	background-image: url(assets/main-background.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
