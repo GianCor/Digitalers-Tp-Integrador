@@ -55,6 +55,7 @@ header {
 .enlaces-contenedor {
 	display: flex;
 	flex-wrap: wrap;
+	transition: all 0.3s ease-in-out;
 }
 
 .enlaces-contenedor a {
@@ -197,10 +198,17 @@ h1 {
 	line-height: 30px;
 	padding: 3px 80px;
 	margin: 20px;
+	transition: all 0.3s ease-in-out;
 }
 
 #crear-cuenta:hover {
 	background: linear-gradient(to right, #43ab30 5%, #35a122 95%);
+	transform: translate(0, -3px);
+}
+
+.formulario-inicio-sesion input:focus{
+	border-style: solid;
+	border: #1a44c2;
 }
 
 #errores {
@@ -229,4 +237,8 @@ footer .enlaces-footer a {
 
 footer .contenedor p {
 	color: #b8b6b4;
+}
+
+.enlaces-contenedor:hover{
+	transform: translate(0,-2px);
 }
